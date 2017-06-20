@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rachel's Vogue Trivia Game</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script rel="stylesheet" type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="assets/javascript/app.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="vogue">
+						<img src="assets/images/vogue.jpg">
+					</div>
+				</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<!-- Countdown Timer -->
+					<div id="status"></div>
+					<script>countDown(50, "status");</script>
+					<!-- Multiple Choice Questions -->
+				<form id="quiz" name="quiz">
+					<p>Who is the famous Editor-in-Chief of Vogue, also known as 'Nuclear Wintour'?<br>
+						<input type="radio" id="mc" name="question1" value="Anna Wintour">Anna Wintour<br>
+						<input type="radio" id="mc" name="question1" value="Paris Hilton">Paris Hilton<br>
+						<input type="radio" id="mc" name="question1" value="Mrs. Vogue">Mrs. Vogue<br>
+						<input type="radio" id="mc" name="question1" value="Jenna Marbles">Jenna Marbles	
+					</p>		
+					
+					<p>In what year did Vogue published their first magazine?<br>
+						<input type="radio" id="mc" name="question2" value="1792">1792<br>
+						<input type="radio" id="mc" name="question2" value="1892">1892<br>
+						<input type="radio" id="mc" name="question2" value="1992">1992<br>
+						<input type="radio" id="mc" name="question2" value="2002">2002	
+					</p>
+					<p>Who is the creativity behind Vogue<br>
+						<input type="radio" id="mc" name="question3" value="Arthur Baldwin">Arthur Baldwin<br>
+						<input type="radio" id="mc" name="question3" value="Calvin Klein">Calvin Klein<br>
+						<input type="radio" id="mc" name="question3" value="Marilyn Monroe">Marilyn Monroe<br>
+						<input type="radio" id="mc" name="question3" value="Joan Crawford">Joan Crawford
+					</p>
+					<p>WWhich fashion publisher bought Vogue?"<br>
+						<input type="radio" id="mc" name="question4" value="New York Times">New York Times<br>
+						<input type="radio" id="mc" name="question4" value="Huffington Post">Huffington Post<br>
+						<input type="radio" id="mc" name="question4" value="New York Magazine">New York Magazine<br>
+						<input type="radio" id="mc" name="question4" value="Conde Nast">Conde Nast
+					</p>
+					<p>How many countries have their own Vogue?<br>
+						<input type="radio" id="mc" name="question5" value="17 countries">17 countries<br>
+						<input type="radio" id="mc" name="question5" value="Only USA">Only USA <br>
+						<input type="radio" id="mc" name="question5" value="Over 100">Over 100 countries<br>
+						<input type="radio" id="mc" name="question5" value="33 countries">33 countries
+					</p>
+					<p>Vogue publishes monthly; who is their July Vogue cover?<br>
+						<input type="radio" id="mc" name="question6" value="Kendall Jenner">Kendall Jenner<br>
+						<input type="radio" id="mc" name="question6" value="Gigi Hadid">Gigi Hadid<br>
+						<input type="radio" id="mc" name="question6" value="Zendaya">Zendaya<br>
+						<input type="radio" id="mc" name="question6" value="Cindy Crawford">Cindy Crawford
+					</p>
+					<p>What country was the first international Vogue magazine?<br>
+						<input type="radio" id="mc" name="question7" value="British Vogue">British Vogue<br>
+						<input type="radio" id="mc" name="question7" value="India Vogue">India Vogue<br>
+						<input type="radio" id="mc" name="question7" value="Italy Vogue">Italy Vogue<br>
+						<input type="radio" id="mc" name="question7" value="Arabia Vogue">Arabia Vogue
+					</p>
+					<p>Who is the first black model for Vogue?<br>
+						<input type="radio" id="mc" name="question8" value="Tyra Banks">Tyra Banks<br>
+						<input type="radio" id="mc" name="question8" value="Beverly Johnson">Beverly Johnson<br>
+						<input type="radio" id="mc" name="question8" value="Oprah">Oprah<br>
+						<input type="radio" id="mc" name="question8" value="Rihanna">Rihanna
+					</p>
+					<p>What is the Vogue magazine about?<br>
+						<input type="radio" id="mc" name="question9" value="To influence everyone about their body">To influence everyone about their body<br>
+						<input type="radio" id="mc" name="question9" value="To influence everyone to be a model">To influence everyone to be a model<br>
+						<input type="radio" id="mc" name="question9" value="To influence American fashion and lifestyle">To influence American fashion and lifestyle<br>
+						<input type="radio" id="mc" name="question9" value="To influence cooking">To influence cooking
+					</p>
+					<p>Who was the first celebrity to feature Vogue?<br>
+						<input type="radio" id="mc" name="question10" value="Kim Kardashian">Kim Kardashian<br>
+						<input type="radio" id="mc" name="question10" value="Britney Spears">Britney Spears<br>
+						<input type="radio" id="mc" name="question10" value="Coco Chanel">Coco Chanel<br>
+						<input type="radio" id="mc" name="question10" value="Madonna">Madonna
+					</p>
+					<!-- Finish button -->
+						<input id="button" type="button" value="I'm finished!" onclick="check();">
+						<div id="after_submit">
+						<p id="number_correct"></p>
+						<p id="number_incorrect"></p>
+				</form>
+				</div>
+			</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+	</div>
+</body>
+	<!-- Links -->
+	<footer>
+		<h5> Check out Vogue's social media pages! 	
+			<a href="https://www.twitter.com/voguemagazine"> Twitter </a>
+			<a href="https://www.instagram.com/voguemagazine">Instagram </a>
+			<a href="https://www.facebook.com/vogue">Facebook </a>
+		</h5>
+	</footer>
+</html>
