@@ -8,20 +8,16 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 	<body>
+		<!-- Countdown Timer -->
+		<header>
+			<div id="status"></div>
+			<script>countDown(60, "status");</script>
+		</header>
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="vogue">
-						<img src="assets/images/vogue.jpg">
-					</div>
-				</div>
 			<div class="row">
 				<div class="col-md-2"></div>
 				<div class="col-md-8">
-					<!-- Countdown Timer -->
-					<div id="status"></div>
-					<script>countDown(50, "status");</script>
-					<!-- Multiple Choice Questions -->
+				<!-- Multiple Choice Questions -->
 				<form id="quiz" name="quiz">
 					<p>Who is the famous Editor-in-Chief of Vogue, also known as 'Nuclear Wintour'?<br>
 						<input type="radio" id="mc" name="question1" value="Anna Wintour">Anna Wintour<br>
@@ -89,6 +85,8 @@
 						<div id="after_submit">
 						<p id="number_correct"></p>
 						<p id="number_incorrect"></p>
+					<!-- reset button -->
+					<button id="restart" onclick = "reset">Click this button to restart!</button>
 				</form>
 				</div>
 			</div>
@@ -100,7 +98,7 @@
 	<!-- Links -->
 	<footer>
 		<h5> Check out Vogue's social media pages! 	
-			<a href="https://www.twitter.com/voguemagazine"> Twitter </a>
+			<a href="https://www.twitter.com/voguemagazine"> Twitter</a>
 			<a href="https://www.instagram.com/voguemagazine">Instagram </a>
 			<a href="https://www.facebook.com/vogue">Facebook </a>
 		</h5>

@@ -1,45 +1,52 @@
+header {
+	background: red;
+	color: yellow;
+	overflow: auto;
+	position: fixed;
+	text-align: center;
+	padding: 10px ;
+	font-size: 2rem;
+}
+
 body {
-	background: url(../images/blackstripes.jpg);
-}
-
-#status {
-	background: pink;
-	padding: 10px;
-	margin:30px;
-	color: black;
-	text-align: center;
-}
-
-.vogue {
-	text-align: center;
+	margin-top:40px;
+	background: url(../images/madonna.jpg) fixed;
 }
 
 p {
-	background: black;
-	color: pink;
-	padding: 30px;
+	background: white;
+	opacity: .7;
+	color: darkred;
+	padding:10px;
 }
 
 #button {
-	background: pink;
+	background: red;
 	padding: 10px;
-	border-color: red;
+	color: white;
 }
 
-#after_submit {
+#after_submit{
 	visibility: hidden;
 }
 
-#number_correct{
-	background:green;
-}
-
-#number_incorrect {
-	background: red;
+#number_correct, #number_incorrect {
+	background: url(../images/balloons.jpg) fixed;
+	color: blue;
+	text-align: center;
+	opacity: .9
 }
 
 footer {
-	background: pink;
+	background: red;
 	color: black;
 	padding: 10px;
+	width: 100%;
+}
+
+#restart{
+	background:yellow;
+	color:red;
+	margin:20px;
+	float: right;
 }
