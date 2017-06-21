@@ -92,7 +92,7 @@ var incorrect=0;
 	}
 
 document.getElementById("after_submit").style.visibility ="visible";
-document.getElementById("number_correct").innerHTML = "You got " + correct+ " correct!";
+document.getElementById("number_correct").innerHTML = "You got " + correct+ " correct!" + "<br>FUN FACT: This backgroudnd is Madonna's first Vogue Cover in 1989";
 document.getElementById("number_incorrect").innerHTML = "You got " + incorrect+ " incorrect.";
 }
 
